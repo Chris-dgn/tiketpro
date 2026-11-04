@@ -1,0 +1,36 @@
+<?php
+
+return [
+    'title' => 'Ticket kaufen',
+    'intro' => 'Wählen Sie Ihre bevorzugte Zahlungsplattform, um Ihr Ticket sicher zu kaufen.',
+    'platforms_title' => 'Partner-Zahlungsplattformen',
+    'platforms_text' => 'Wählen Sie eine unserer Partnerplattformen, um Ihren Ticketkauf abzuschließen.',
+    'buy_button' => 'Mein Ticket kaufen',
+    'secure' => 'Transaktionen auf unseren Partnerplattformen profitieren von Sicherheitsmaßnahmen.',
+    'steps_title' => 'So funktioniert der Kauf',
+    'steps_intro' => 'Entdecken Sie die Schritte zum Kauf und zur Nutzung Ihres Tickets.',
+    'steps' => [
+        'one_title' => 'Kauf abschließen',
+        'one_text' => 'Wählen Sie eine Partnerplattform und folgen Sie den Anweisungen, um Ihren Kauf abzuschließen.',
+        'two_title' => 'Zu unserer Plattform zurückkehren',
+        'two_text' => 'Kehren Sie nach dem Kauf zu unserem Portal zurück, um die Informationen zu Ihrem Ticket einzusehen.',
+        'three_title' => 'Ticket überprüfen',
+        'three_text' => 'Nutzen Sie unser Überprüfungstool, um die Informationen zu Ihrem Ticket einzusehen.',
+        'four_title' => 'Ticket verwenden',
+        'four_text' => 'Befolgen Sie die Anweisungen des Veranstalters, um Ihr Ticket zu verwenden.',
+    ],
+    'why_title' => 'Warum TiketPro wählen',
+    'features' => [
+        'security_title' => 'Sicherheit',
+        'security_text' => 'Wir leiten Sie zu Partnerplattformen weiter und informieren Sie über die einzelnen Schritte Ihres Kaufs.',
+        'activation_title' => 'Kaufverfolgung',
+        'activation_text' => 'Finden Sie nach dem Kauf die Informationen zu Ihrem Ticket.',
+        'support_title' => 'Kundenservice',
+        'support_text' => 'Unser Team steht Ihnen für Fragen und Unterstützung zur Verfügung.',
+        'authenticity_title' => 'Ticketüberprüfung',
+        'authenticity_text' => 'Sehen Sie sich die Informationen zu Ihrem Ticket mit unserem Überprüfungstool an.',
+    ],
+    'button_guthaben' => 'Mein Guthaben-Ticket kaufen',
+    'button_kaartdirect' => 'Mein Kaartdirect-Ticket kaufen',
+    'button_dundle' => 'Mein Dundle.com-Ticket kaufen',
+];

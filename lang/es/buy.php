@@ -1,0 +1,36 @@
+<?php
+
+return [
+    'title' => 'Comprar tu entrada',
+    'intro' => 'Elige tu plataforma de pago preferida para comprar tu entrada de forma segura.',
+    'platforms_title' => 'Plataformas de pago asociadas',
+    'platforms_text' => 'Selecciona una de nuestras plataformas asociadas para realizar la compra de tu entrada.',
+    'buy_button' => 'Comprar mi entrada',
+    'secure' => 'Las transacciones realizadas en nuestras plataformas asociadas cuentan con medidas de seguridad.',
+    'steps_title' => 'Cómo funciona la compra',
+    'steps_intro' => 'Descubre los pasos para comprar y utilizar tu entrada.',
+    'steps' => [
+        'one_title' => 'Realiza tu compra',
+        'one_text' => 'Elige una plataforma asociada y sigue sus instrucciones para completar tu compra.',
+        'two_title' => 'Vuelve a nuestra plataforma',
+        'two_text' => 'Después de la compra, vuelve a nuestro portal para consultar la información de tu entrada.',
+        'three_title' => 'Verificación de la entrada',
+        'three_text' => 'Utiliza nuestra herramienta de verificación para consultar la información de tu entrada.',
+        'four_title' => 'Utiliza tu entrada',
+        'four_text' => 'Sigue las instrucciones del organizador para utilizar tu entrada.',
+    ],
+    'why_title' => 'Por qué elegir TiketPro',
+    'features' => [
+        'security_title' => 'Seguridad',
+        'security_text' => 'Te dirigimos a plataformas asociadas y te informamos sobre los pasos de tu compra.',
+        'activation_title' => 'Seguimiento de la compra',
+        'activation_text' => 'Consulta la información de tu entrada después de realizar la compra.',
+        'support_title' => 'Atención al cliente',
+        'support_text' => 'Nuestro equipo está disponible para responder a tus preguntas y ayudarte.',
+        'authenticity_title' => 'Verificación de la entrada',
+        'authenticity_text' => 'Consulta la información de tu entrada mediante nuestra herramienta de verificación.',
+    ],
+    'button_guthaben' => 'Comprar mi entrada de Guthaben',
+    'button_kaartdirect' => 'Comprar mi entrada de Kaartdirect',
+    'button_dundle' => 'Comprar mi entrada de Dundle.com',
+];

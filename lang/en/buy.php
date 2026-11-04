@@ -1,0 +1,36 @@
+<?php
+
+return [
+    'title' => 'Buy your ticket',
+    'intro' => 'Choose your preferred payment platform to purchase your ticket safely.',
+    'platforms_title' => 'Partner payment platforms',
+    'platforms_text' => 'Select one of our partner platforms to proceed with your ticket purchase.',
+    'buy_button' => 'Buy my ticket',
+    'secure' => 'Transactions carried out on our partner platforms benefit from security measures.',
+    'steps_title' => 'How the purchase works',
+    'steps_intro' => 'Discover the steps to follow to purchase and use your ticket.',
+    'steps' => [
+        'one_title' => 'Make your purchase',
+        'one_text' => 'Choose a partner platform and follow its instructions to complete your purchase.',
+        'two_title' => 'Return to our platform',
+        'two_text' => 'After your purchase, return to our portal to view your ticket information.',
+        'three_title' => 'Ticket verification',
+        'three_text' => 'Use our verification tool to view your ticket information.',
+        'four_title' => 'Use your ticket',
+        'four_text' => 'Follow the event organiser’s instructions to use your ticket.',
+    ],
+    'why_title' => 'Why choose TiketPro',
+    'features' => [
+        'security_title' => 'Security',
+        'security_text' => 'We direct you to partner platforms and provide information about the steps in your purchase.',
+        'activation_title' => 'Purchase tracking',
+        'activation_text' => 'Find your ticket information after your purchase.',
+        'support_title' => 'Customer support',
+        'support_text' => 'Our team is available to answer your questions and assist you.',
+        'authenticity_title' => 'Ticket verification',
+        'authenticity_text' => 'View your ticket information using our verification tool.',
+    ],
+    'button_guthaben' => 'Buy my Guthaben ticket',
+    'button_kaartdirect' => 'Buy my Kaartdirect ticket',
+    'button_dundle' => 'Buy my Dundle.com ticket',
+];

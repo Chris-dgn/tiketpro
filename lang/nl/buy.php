@@ -1,0 +1,36 @@
+<?php
+
+return [
+    'title' => 'Je ticket kopen',
+    'intro' => 'Kies je favoriete betaalplatform om je ticket veilig te kopen.',
+    'platforms_title' => 'Partnerbetaalplatforms',
+    'platforms_text' => 'Selecteer een van onze partnerplatforms om je ticket aan te schaffen.',
+    'buy_button' => 'Mijn ticket kopen',
+    'secure' => 'Transacties via onze partnerplatforms worden beschermd door veiligheidsmaatregelen.',
+    'steps_title' => 'Hoe werkt de aankoop?',
+    'steps_intro' => 'Ontdek de stappen om je ticket te kopen en te gebruiken.',
+    'steps' => [
+        'one_title' => 'Doe je aankoop',
+        'one_text' => 'Kies een partnerplatform en volg de instructies om je aankoop af te ronden.',
+        'two_title' => 'Keer terug naar ons platform',
+        'two_text' => 'Ga na je aankoop terug naar ons portaal om de informatie over je ticket te bekijken.',
+        'three_title' => 'Ticket controleren',
+        'three_text' => 'Gebruik onze verificatietool om de informatie over je ticket te bekijken.',
+        'four_title' => 'Je ticket gebruiken',
+        'four_text' => 'Volg de instructies van de organisator om je ticket te gebruiken.',
+    ],
+    'why_title' => 'Waarom kiezen voor TiketPro',
+    'features' => [
+        'security_title' => 'Veiligheid',
+        'security_text' => 'We verwijzen je naar partnerplatforms en informeren je over de stappen van je aankoop.',
+        'activation_title' => 'Aankoop volgen',
+        'activation_text' => 'Bekijk de informatie over je ticket na je aankoop.',
+        'support_title' => 'Klantenservice',
+        'support_text' => 'Ons team staat klaar om je vragen te beantwoorden en je te helpen.',
+        'authenticity_title' => 'Ticketverificatie',
+        'authenticity_text' => 'Bekijk de informatie over je ticket met onze verificatietool.',
+    ],
+    'button_guthaben' => 'Mijn Guthaben-ticket kopen',
+    'button_kaartdirect' => 'Mijn Kaartdirect-ticket kopen',
+    'button_dundle' => 'Mijn Dundle.com-ticket kopen',
+];
