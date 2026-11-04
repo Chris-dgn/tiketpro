@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'hero_title' => 'Entradas <em>verificadas</em>, desde el primer clic hasta el acceso.',
+    'hero_title' => 'Entradas <em>verificadas</em>,<br class="mobile-title-break"> del clic a la entrada.',
     'buy_button' => 'Comprar una entrada',
     'verify_button' => 'Verificar una entrada',
 

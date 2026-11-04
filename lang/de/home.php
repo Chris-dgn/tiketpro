@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'hero_title' => 'Geprüfte <em>Tickets</em>, vom ersten Klick bis zum Einlass.',
+    'hero_title' => 'Tickets <em>geprüft</em>,<br class="mobile-title-break"> vom Klick zum Einlass.',
     'buy_button' => 'Ticket kaufen',
     'verify_button' => 'Ticket überprüfen',
 

@@ -38,17 +38,41 @@
                     </a>
                 </nav>
 
-                <form method="POST" action="{{ route('langue.changer') }}">
+                <form method="POST" action="{{ route('langue.changer') }}" class="language-picker">
                     @csrf
-                    <select class="lang-select" name="locale"
+                    @php
+                        $languages = [
+                            'fr' => ['🇫🇷', 'Français'],
+                            'en' => ['🇬🇧', 'English'],
+                            'de' => ['🇩🇪', 'Deutsch'],
+                            'es' => ['🇪🇸', 'Español'],
+                            'nl' => ['🇳🇱', 'Nederlands'],
+                        ];
+                        $currentLanguage = $languages[app()->getLocale()] ?? $languages['fr'];
+                    @endphp
+
+                    <button type="button" class="language-trigger"
                             aria-label="{{ __('site.language.label') }}"
-                            onchange="this.form.submit()">
-                        <option value="fr" {{ app()->getLocale() === 'fr' ? 'selected' : '' }}>🇫🇷 Français</option>
-                        <option value="en" {{ app()->getLocale() === 'en' ? 'selected' : '' }}>🇬🇧 English</option>
-                        <option value="de" {{ app()->getLocale() === 'de' ? 'selected' : '' }}>🇩🇪 Deutsch</option>
-                        <option value="es" {{ app()->getLocale() === 'es' ? 'selected' : '' }}>🇪🇸 Español</option>
-                        <option value="nl" {{ app()->getLocale() === 'nl' ? 'selected' : '' }}>🇳🇱 Nederlands</option>
-                    </select>
+                            aria-haspopup="true" aria-expanded="false">
+                        <span class="language-current-flag">{{ $currentLanguage[0] }}</span>
+                        <span class="language-current-name">{{ $currentLanguage[1] }}</span>
+                        <svg class="language-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+
+                    <div class="language-menu" hidden>
+                        @foreach ($languages as $code => $language)
+                            <button type="submit" name="locale" value="{{ $code }}"
+                                    class="language-option {{ app()->getLocale() === $code ? 'is-active' : '' }}">
+                                <span>{{ $language[0] }}</span>
+                                <span>{{ $language[1] }}</span>
+                                @if (app()->getLocale() === $code)
+                                    <span class="language-check">✓</span>
+                                @endif
+                            </button>
+                        @endforeach
+                    </div>
                 </form>
             </div>
         </div>

@@ -1,7 +1,7 @@
 <?php
 
 return [
-     'hero_title' => 'Des billets <em>vérifiés</em>, du premier clic à l’entrée.',
+     'hero_title' => 'Des billets <em>vérifiés</em>, du<br class="mobile-title-break"> premier clic à l’entrée.',
     'buy_button' => 'Acheter un billet',
     'verify_button' => 'Vérifier un billet',
 

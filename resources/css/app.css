@@ -2044,3 +2044,188 @@ button.btn-primary:hover {
 .topbar-inner > form .lang-select {
   margin-left: 0;
 }
+
+/* ========================================
+   Sélecteur de langue — finition premium
+   ======================================== */
+
+.language-picker {
+  position: relative;
+  margin-left: auto;
+  flex-shrink: 0;
+  z-index: 60;
+}
+
+.language-trigger {
+  min-width: 190px;
+  min-height: 52px;
+  padding: 0 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid rgba(18, 24, 42, 0.12);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgba(18, 24, 42, 0.045);
+  transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease;
+}
+
+.language-trigger:hover,
+.language-picker.is-open .language-trigger {
+  border-color: var(--amber);
+  box-shadow: 0 5px 18px rgba(18, 24, 42, 0.09);
+}
+
+.language-current-flag {
+  font-size: 21px;
+}
+
+.language-chevron {
+  width: 19px;
+  height: 19px;
+  transition: transform .3s ease;
+}
+
+.language-picker.is-open .language-chevron {
+  transform: rotate(180deg);
+}
+
+.language-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 100%;
+  padding: 7px;
+  background: #fff;
+  border: 1px solid rgba(18, 24, 42, 0.09);
+  border-radius: 9px;
+  box-shadow: 0 14px 35px rgba(18, 24, 42, 0.13);
+  transform-origin: top center;
+}
+
+.language-menu[hidden] {
+  display: none;
+}
+
+.language-menu.is-visible {
+  animation: languageDrop .28s cubic-bezier(.2, .75, .25, 1) both;
+}
+
+@keyframes languageDrop {
+  from {
+    opacity: 0;
+    transform: translateY(-9px) scale(.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.language-option {
+  width: 100%;
+  min-height: 43px;
+  padding: 0 11px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+  transition: background .2s ease, padding-left .2s ease;
+}
+
+.language-option:hover {
+  background: #f8f6f1;
+  padding-left: 15px;
+}
+
+.language-option.is-active {
+  background: #fbf5e9;
+  font-weight: 700;
+}
+
+.language-check {
+  margin-left: auto;
+  color: var(--amber-deep);
+  font-weight: 700;
+}
+
+@media (max-width: 639px) {
+  .language-trigger {
+    min-width: 150px;
+    min-height: 48px;
+    padding: 0 12px;
+    font-size: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .language-trigger,
+  .language-chevron,
+  .language-option {
+    transition: none !important;
+  }
+
+  .language-menu.is-visible {
+    animation: none !important;
+  }
+}
+
+/* Titres du hero : coupures adaptées au mobile */
+.mobile-title-break {
+  display: none;
+}
+
+@media (max-width: 639px) {
+  .mobile-title-break {
+    display: block;
+  }
+}
+
+/* Barre mobile — icônes TiketPro raffinées */
+.bottom-nav .nav-item {
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  transition:
+    color .25s ease,
+    background .25s ease,
+    transform .25s ease;
+}
+
+.bottom-nav .nav-item svg {
+  width: 23px;
+  height: 23px;
+  stroke-width: 1.85;
+  transition:
+    color .25s ease,
+    transform .25s cubic-bezier(.2, .8, .2, 1);
+}
+
+.bottom-nav .nav-item.active svg {
+  transform: translateY(-2px);
+}
+
+.bottom-nav .nav-item:active {
+  transform: scale(.96);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bottom-nav .nav-item,
+  .bottom-nav .nav-item svg {
+    transition: none !important;
+  }
+}

@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'hero_title' => 'Geverifieerde <em>tickets</em>, van de eerste klik tot de toegang.',
+    'hero_title' => 'Tickets <em>geverifieerd</em>,<br class="mobile-title-break"> van klik tot ingang.',
     'buy_button' => 'Koop een ticket',
     'verify_button' => 'Controleer een ticket',
 

@@ -28,3 +28,47 @@ document.addEventListener('DOMContentLoaded', () => {
         requestAnimationFrame(step);
     });
 });
+
+/* Sélecteur de langue personnalisé */
+document.addEventListener('DOMContentLoaded', () => {
+    const picker = document.querySelector('.language-picker');
+    if (!picker) return;
+
+    const trigger = picker.querySelector('.language-trigger');
+    const menu = picker.querySelector('.language-menu');
+
+    function closeMenu() {
+        picker.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+        menu.classList.remove('is-visible');
+        menu.hidden = true;
+    }
+
+    trigger.addEventListener('click', () => {
+        const isOpen = !menu.hidden;
+
+        if (isOpen) {
+            closeMenu();
+        } else {
+            menu.hidden = false;
+            picker.classList.add('is-open');
+            trigger.setAttribute('aria-expanded', 'true');
+            requestAnimationFrame(() => {
+                menu.classList.add('is-visible');
+            });
+        }
+    });
+
+    document.addEventListener('click', (event) => {
+        if (!picker.contains(event.target)) {
+            closeMenu();
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            closeMenu();
+            trigger.focus();
+        }
+    });
+});
