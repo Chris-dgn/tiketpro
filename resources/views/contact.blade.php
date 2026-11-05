@@ -14,7 +14,7 @@
             <div class="contact-method-icon">✉</div>
             <h2>{{ __("contact.email_title") }}</h2>
             <p>{{ __("contact.email_text") }}</p>
-            <strong>contact@tiketpro.com</strong>
+            <strong>contact@usecardpro.com</strong>
             <span>{{ __("contact.email_response") }}</span>
         </article>
 
