@@ -1842,11 +1842,12 @@ button.btn-primary:hover {
     }
 
     .hero h1 {
-        color: #fff;
-        font-size: 29px;
-        line-height: 1.13;
-        margin-bottom: 24px;
-    }
+    color: #fff;
+    font-size: 29px;
+    line-height: 1.13;
+    margin-bottom: 24px;
+    text-align: center;
+}
 
     .hero p {
         color: rgba(255, 255, 255, 0.88);
